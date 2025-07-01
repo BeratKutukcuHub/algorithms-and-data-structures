@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkedList", "LinkedList\Li
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "List", "List\List.csproj", "{5BDEF238-D603-4D01-ABB5-3638B70163AF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stack", "Stack\Stack.csproj", "{56AF4B48-12C4-4C1B-98CB-BC0DEE37D835}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Queue", "Queue\Queue.csproj", "{3B75C5BE-4F9F-42EA-A4F7-E5D67AAC61E3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +28,13 @@ Global
 		{5BDEF238-D603-4D01-ABB5-3638B70163AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5BDEF238-D603-4D01-ABB5-3638B70163AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5BDEF238-D603-4D01-ABB5-3638B70163AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56AF4B48-12C4-4C1B-98CB-BC0DEE37D835}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56AF4B48-12C4-4C1B-98CB-BC0DEE37D835}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56AF4B48-12C4-4C1B-98CB-BC0DEE37D835}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56AF4B48-12C4-4C1B-98CB-BC0DEE37D835}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B75C5BE-4F9F-42EA-A4F7-E5D67AAC61E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B75C5BE-4F9F-42EA-A4F7-E5D67AAC61E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B75C5BE-4F9F-42EA-A4F7-E5D67AAC61E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B75C5BE-4F9F-42EA-A4F7-E5D67AAC61E3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

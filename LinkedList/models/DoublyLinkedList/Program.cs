@@ -131,6 +131,31 @@ public class DoublyLinkedList<T>
             current = current.Next;
         }
     }
+    public void AddBefore(int index, T val)
+    {
+        var instance = new DoublyLinkedListNode<T>(val);
+        if (Head == null)
+        {
+            Head = instance;
+            return;
+        }
+        int count = 0;
+        var current = Head;
+        while (current != null)
+        {
+            if (count == index)
+            {
+                instance.Next = current;
+                instance.Prev = current.Prev;
+
+                current.Prev.Next = instance;
+                current.Prev = instance;                
+            }
+            current = current.Next;
+            count++;
+        }
+        
+    }
     public void AddBefore(DoublyLinkedListNode<T> referance, DoublyLinkedListNode<T> newNode)
     {
         if (Head == null)

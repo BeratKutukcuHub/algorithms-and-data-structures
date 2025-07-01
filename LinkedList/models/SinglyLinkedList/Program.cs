@@ -1,6 +1,4 @@
 ﻿using System.Collections;
-using System.Diagnostics.Contracts;
-using System.Reflection.Metadata.Ecma335;
 
 namespace SinglyLinkedList;
 /// <summary>
@@ -21,9 +19,9 @@ public class LinkedListNode<T>
 /// <summary>
 /// Tek yönlü bağlı liste veri yapısı.
 /// </summary>
-public class LinkedList<T> : IEnumerable<T>
+public class LinkedList<T> 
 {
-    public LinkedList(){}
+    public LinkedList() { }
     public LinkedList(IEnumerable<T> collections)
     {
         foreach (var item in collections)
@@ -170,15 +168,9 @@ public class LinkedList<T> : IEnumerable<T>
             current = current.Next;
         }
     }
-
     public IEnumerator<T> GetEnumerator()
     {
         return new SinglyLinkedListEnumerator<T>(Head);
-    }
-
-    IEnumerator IEnumerable.GetEnumerator()
-    {
-        return GetEnumerator();
     }
 }
 public class SinglyLinkedListEnumerator<T> : IEnumerator<T>
